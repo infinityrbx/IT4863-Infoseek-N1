@@ -1,0 +1,22 @@
+{
+ "excluded_host": [
+  "https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx",
+  "https://ctt.hust.edu.vn/",
+  "https://dlib.hust.edu.vn/",
+  "https://e.hust.edu.vn/",
+  "https://mail.hust.edu.vn/",
+  "https://qldt.hust.edu.vn/",
+  "https://work.hust.edu.vn/"
+ ],
+ "login": [
+  "https://fami.hust.edu.vn/wp-login.php",
+  "https://scls.hust.edu.vn/vi/users/login",
+  "https://sem.hust.edu.vn/login"
+ ],
+ "duplicate_canonical_or_redirect": [
+  "https://hust.edu.vn/vi"
+ ],
+ "non_html_ext": [
+  "https://library.hust.edu.vn/sites/default/files/Guide%20IEL%202026.pdf"
+ ]
+}

@@ -1,0 +1,59 @@
+{
+  "finished_reason": "shutdown",
+  "start": [
+    "https://hust.edu.vn/"
+  ],
+  "domains": [
+    "hust.edu.vn"
+  ],
+  "include_subdomains": false,
+  "content_pages": 5107,
+  "content_pages_by_host": {
+    "hust.edu.vn": 5107
+  },
+  "content_pages_by_depth": {
+    "0": 1,
+    "1": 118,
+    "2": 849,
+    "3": 1800,
+    "4": 2339
+  },
+  "skipped_unique_urls_by_reason": {
+    "tag_archive": 1212,
+    "non_html_ext": 957,
+    "pagination": 226,
+    "non_html_type": 57,
+    "http_4xx": 45,
+    "query_trap": 4,
+    "login": 3,
+    "soft_error": 2,
+    "too_long": 1
+  },
+  "http_status_counts": {
+    "200": 4947,
+    "404": 45
+  },
+  "top_external_hosts": {
+    "youtube.com": 6638,
+    "instagram.com": 6357,
+    "bulletin.hust.edu.vn": 6170,
+    "tuyendung.hust.edu.vn": 3594,
+    "facebook.com": 3593,
+    "e.hust.edu.vn": 3356,
+    "mail.hust.edu.vn": 3317,
+    "linkedin.com": 3287,
+    "work.hust.edu.vn": 3130,
+    "library.hust.edu.vn": 3076,
+    "google.com": 3075,
+    "ctt-sis.hust.edu.vn": 3072,
+    "svbk.hust.edu.vn": 3072,
+    "moet.gov.vn": 3072,
+    "wiki.nukeviet.vn": 3071,
+    "jst.vn": 3071,
+    "202.191.57.199": 478,
+    "en.hust.edu.vn": 346,
+    "jst.hust.edu.vn": 243,
+    "vista.gov.vn": 239
+  },
+  "finished_at": "2026-11-22T23:30:51+00:00"
+}

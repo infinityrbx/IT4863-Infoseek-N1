@@ -1,0 +1,7 @@
+.venv/
+crawls/
+.scrapy/
+httpcache*/
+__pycache__/
+*.pyc
+.DS_Store

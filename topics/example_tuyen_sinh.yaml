@@ -1,0 +1,52 @@
+# Example topic: university admissions ("tuyển sinh") on HUST sites.
+# Copy this file to topics/<your_topic>.yaml and edit it for your group's topic.
+
+name: tuyen-sinh-hust
+
+seeds:
+  - https://hust.edu.vn/
+  - https://ts.hust.edu.vn/
+
+allowed_domains:          # the crawler never leaves these (subdomains included if below = true)
+  - hust.edu.vn
+include_subdomains: true
+
+# Keywords: a plain list (weight 1) or "keyword: weight".
+# Matching is case-insensitive and ignores diacritics, so "tuyen sinh" == "tuyển sinh".
+keywords:
+  tuyển sinh: 3
+  xét tuyển: 3
+  điểm chuẩn: 3
+  thí sinh: 2
+  nguyện vọng: 2
+  đánh giá tư duy: 2
+  học bổng: 1
+  ngành: 1
+  chỉ tiêu: 2
+  hồ sơ: 1
+  admission: 2
+
+# Pages mentioning these lose points (e.g. job ads, procurement notices).
+negative_keywords:
+  tuyển dụng: 2
+  mời thầu: 2
+
+# Score multiplier per field (defaults shown).
+field_weights:
+  title: 3
+  h1: 3
+  description: 2
+  keywords: 2
+  url: 1
+  text: 1
+
+min_score: 6              # page is on-topic when weighted score >= this
+ignore_diacritics: true
+max_text_hits_per_keyword: 5   # cap so one long page cannot dominate
+
+max_depth: 4              # link hops from a seed
+off_topic_tunnel: 1       # follow links through at most 1 off-topic page in a row
+save_off_topic: false     # true = keep off-topic pages too (useful to tune min_score)
+drop_duplicates: false    # false = keep duplicates but mark them in "dedup"
+near_dup_threshold: 0.8   # MinHash Jaccard threshold for near-duplicates
+min_text_chars: 200       # shorter main text = listing/hub page: followed, not saved
