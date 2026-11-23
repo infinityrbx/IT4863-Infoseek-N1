@@ -5,3 +5,4 @@ httpcache*/
 __pycache__/
 *.pyc
 .DS_Store
+output/hust_pages.jsonl
