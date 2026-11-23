@@ -31,10 +31,8 @@ SUBDOMAIN_SEEDS = [
     "fami", "sofl", "fed", "fpt", "gdqp", "gdtc", "sep", "set", "sie", "mse", "see", "bme",
     # institutes / centres (viện)
     "iet", "fintech", "act", "ai4life", "aist", "bkcs", "icea", "navis", "vjiist", "inapro",
-    "bmec", "srn", "qmfs",
+    "bmec", "srn", "qmfs",'research'
 ]
-# Start pages that are not a subdomain's home page.
-EXTRA_START_URLS = ["https://research.hust.edu.vn/fep"]
 
 
 class HustSpider(SiteCountSpider):
@@ -54,7 +52,7 @@ class HustSpider(SiteCountSpider):
                  max_pages_per_host="3000", summary="output/hust_summary.json", *args, **kwargs):
         if start is None:
             start = ",".join(["https://hust.edu.vn/"] +
-                             [f"https://{s}.hust.edu.vn/" for s in SUBDOMAIN_SEEDS] + EXTRA_START_URLS)
+                             [f"https://{s}.hust.edu.vn/" for s in SUBDOMAIN_SEEDS])
         super().__init__(start=start, domains=domains, include_subdomains=include_subdomains,
                          save_content=save_content, max_pages_per_host=max_pages_per_host,
                          summary=summary, *args, **kwargs)
